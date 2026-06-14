@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Great+Vibes&family=Shippori+Mincho&display=swap');
+@import "tailwindcss";
 
 @layer utilities {
   .font-script {

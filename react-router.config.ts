@@ -4,6 +4,7 @@ export default {
   // Config options...
   // Server-side render by default, to enable SPA mode set this to `false`
   ssr: false,
+  basename: process.env.GITHUB_PAGES ? "/wedding/" : "/",
   future: {
     v8_middleware: true,
     v8_passThroughRequests: true,

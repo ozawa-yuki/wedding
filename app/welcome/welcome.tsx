@@ -1,10 +1,14 @@
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
+import bgImage from "./329.jpg";
 
 export function Welcome() {
   return (
     <main className="h-screen">
-      <div className="min-h-svh bg-cover bg-center bg-no-repeat bg-scroll header-bg bg-[url('welcome/329.jpg')]">
+      <div
+        className="min-h-svh bg-cover bg-center bg-no-repeat bg-scroll header-bg"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      >
         <header className="flex flex-col items-center gap-9">
         </header>
         <section className="absolute inset-0 flex items-start justify-center pt-16 sm:pt-24 md:pt-32 lg:pt-40">

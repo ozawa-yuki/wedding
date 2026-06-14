@@ -1,6 +1,7 @@
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 import bgImage from "./329.jpg";
+import minatomirai from "./minatomirai.svg";
 
 export function Welcome() {
   return (
@@ -24,22 +25,20 @@ export function Welcome() {
         </div>
       </section>
 
-      <section className="relative h-screen w-full snap-start flex items-center justify-center bg-stone-900 text-white">
-        <div className="px-6 mx-auto max-w-screen-md text-center">
+      <section className="relative h-screen w-full snap-start flex items-center justify-center bg-stone-900 text-white overflow-hidden">
+        <img
+          src={minatomirai}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute bottom-0 left-0 w-full h-auto select-none [filter:brightness(0)_invert(1)] opacity-80"
+        />
+        <div className="relative z-10 px-6 mx-auto max-w-screen-md text-center">
           <p className="font-script text-3xl sm:text-4xl md:text-5xl">Save the Date</p>
           <div className="mt-10 sm:mt-14 space-y-3 font-serif-display">
-            <p className="text-2xl sm:text-3xl md:text-4xl">2026 . 08 . 06</p>
-            <p className="text-base sm:text-lg md:text-xl text-white/80">Thursday</p>
+            <p className="text-2xl sm:text-3xl md:text-4xl">挙式</p>
+            <p className="text-2xl sm:text-3xl md:text-4xl">2026 . 08 . 06  12:00~</p>
           </div>
-          <div className="mt-10 sm:mt-14 space-y-2 font-serif-display">
-            <p className="text-xl sm:text-2xl md:text-3xl">Tokyu Bay Hotel</p>
-            <p className="text-sm sm:text-base text-white/70">
-              <a href ="https://ybht.co.jp/access/">
-                神奈川県横浜市西区みなとみらい2-3-7
-              </a>
-            </p>
-          </div>
-          <p className="mt-12 sm:mt-16 font-ja text-sm sm:text-base leading-loose text-white/85">
+                    <p className="mt-12 sm:mt-16 font-ja text-sm sm:text-base leading-loose text-white/85">
             このたび 私たちは
             <br />
             結婚式を挙げることになりました
@@ -52,6 +51,13 @@ export function Welcome() {
             <br />
             小さな宴を催したく存じます
           </p>
+          
+        </div>
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/80 animate-bounce">
+          <span className="font-serif-display text-xs sm:text-sm tracking-widest">SCROLL</span>
+          <svg className="mt-1 w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
         </div>
       </section>
     </main>

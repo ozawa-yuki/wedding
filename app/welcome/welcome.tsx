@@ -3,44 +3,17 @@ import logoLight from "./logo-light.svg";
 
 export function Welcome() {
   return (
-    <main className="flex items-center justify-center pt-16 pb-4">
-      <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
+    <main className="h-screen">
+      <div className="min-h-svh bg-cover bg-center bg-no-repeat bg-scroll header-bg bg-[url('welcome/329.jpg')]">
         <header className="flex flex-col items-center gap-9">
-          <div className="w-[500px] max-w-[100vw] p-4">
-            <img
-              src={logoLight}
-              alt="React Router"
-              className="block w-full dark:hidden"
-            />
-            <img
-              src={logoDark}
-              alt="React Router"
-              className="hidden w-full dark:block"
-            />
-          </div>
         </header>
-        <div className="max-w-[300px] w-full space-y-6 px-4">
-          <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
-            <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
-              What&apos;s next?
-            </p>
-            <ul>
-              {resources.map(({ href, text, icon }) => (
-                <li key={href}>
-                  <a
-                    className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {icon}
-                    {text}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
+        <section className="absolute inset-0 flex items-start justify-center pt-16 sm:pt-24 md:pt-32 lg:pt-40">
+          <div className="px-4 mx-auto max-w-screen-xl text-center lg:px-12">
+          <h1 className="font-script text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Wedding Invitation</h1>
+            <p className="font-serif-display mt-4 text-base sm:text-lg md:text-xl lg:text-2xl">2026 August 6</p>
+            <p className="font-serif-display mt-2 text-sm sm:text-base md:text-lg lg:text-xl">Tokyu Bay Hotel</p>
+          </div>
+        </section>
       </div>
     </main>
   );

@@ -12,7 +12,7 @@ export function Welcome() {
           <div className="px-4 mx-auto max-w-screen-xl text-center lg:px-12">
             <h1 className="font-script text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Wedding Invitation</h1>
             <p className="font-serif-display mt-4 text-base sm:text-lg md:text-xl lg:text-2xl">2026 August 6</p>
-            <p className="font-serif-display mt-2 text-sm sm:text-base md:text-lg lg:text-xl">Tokyu Bay Hotel</p>
+            <p className="font-serif-display mt-2 text-sm sm:text-base md:text-lg lg:text-xl">Yuki & Kanako</p>
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/80 animate-bounce">

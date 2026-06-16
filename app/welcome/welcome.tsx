@@ -1,5 +1,3 @@
-import logoDark from "./logo-dark.svg";
-import logoLight from "./logo-light.svg";
 import bgImage from "./329.jpg";
 import minatomirai from "./minatomirai.svg";
 
@@ -35,8 +33,6 @@ export function Welcome() {
         <div className="relative z-10 px-6 mx-auto max-w-screen-md text-center">
           <p className="font-script text-3xl sm:text-4xl md:text-5xl">Save the Date</p>
           <div className="mt-10 sm:mt-14 space-y-3 font-serif-display">
-            <p className="text-2xl sm:text-3xl md:text-4xl">挙式</p>
-            <p className="text-2xl sm:text-3xl md:text-4xl">2026 . 08 . 06  12:00~</p>
           </div>
                     <p className="mt-12 sm:mt-16 font-ja text-sm sm:text-base leading-loose text-white/85">
             このたび 私たちは
@@ -58,6 +54,41 @@ export function Welcome() {
           <svg className="mt-1 w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
             <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
+        </div>
+
+      </section>
+      <section className="relative h-screen w-full snap-start flex items-center justify-center bg-stone-900 text-white overflow-hidden">
+        <img
+          src={minatomirai}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute bottom-0 left-0 w-full h-auto select-none [filter:brightness(0)_invert(1)] opacity-80"
+        />
+        <div className="relative z-10 px-6 mx-auto max-w-screen-md text-center">
+          <p className="font-script text-3xl sm:text-4xl md:text-5xl">Ceremony</p>
+          <p className="mt-2 font-serif-display text-lg sm:text-xl tracking-widest text-white/80">挙 式</p>
+
+          <div className="mt-10 sm:mt-14 font-ja text-sm sm:text-base leading-relaxed">
+            <div>
+              <p className="font-serif-display text-xs sm:text-sm tracking-[0.3em] text-white/60">DATE</p>
+              <p className="mt-2 font-serif-display text-base sm:text-lg">2026 . 08 . 06 THU</p>
+              <p className="mt-1 text-white/85">受付 11:30 / 挙式 12:00</p>
+            </div>
+
+            <div className="mx-auto my-8 h-px w-16 bg-white/30" />
+
+            <div>
+              <p className="font-serif-display text-xs sm:text-sm tracking-[0.3em] text-white/60">VENUE</p>
+              <p className="mt-2 font-serif-display text-base sm:text-lg">Tokyu Bay Hotel</p>
+              <p className="mt-1 text-white/85">横浜ベイホテル東急</p>
+              <p className="mt-2 text-xs sm:text-sm text-white/70">
+                〒220-8515
+                <br />
+                神奈川県横浜市西区みなとみらい2-3-7
+              </p>
+              <p className="mt-2 text-xs sm:text-sm text-white/70">TEL 045-682-2222</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

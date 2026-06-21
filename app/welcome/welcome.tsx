@@ -32,8 +32,6 @@ export function Welcome() {
         />
         <div className="relative z-10 px-6 mx-auto max-w-screen-md text-center">
           <p className="font-script text-3xl sm:text-4xl md:text-5xl">Save the Date</p>
-          <div className="mt-10 sm:mt-14 space-y-3 font-serif-display">
-          </div>
                     <p className="mt-12 sm:mt-16 font-ja text-sm sm:text-base leading-loose text-white/85">
             このたび 私たちは
             <br />
@@ -47,7 +45,12 @@ export function Welcome() {
             <br />
             小さな宴を催したく存じます
           </p>
-          
+
+          <div className="mt-12 sm:mt-16 flex items-center justify-center gap-6 sm:gap-8 font-script-formal text-white">
+            <span className="text-5xl sm:text-6xl md:text-7xl leading-none">Yuki</span>
+            <span className="font-serif-display text-xl sm:text-2xl md:text-3xl text-white/60 italic">&amp;</span>
+            <span className="text-5xl sm:text-6xl md:text-7xl leading-none">Kanako</span>
+          </div>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/80 animate-bounce">
           <span className="font-serif-display text-xs sm:text-sm tracking-widest">SCROLL</span>
@@ -83,11 +86,58 @@ export function Welcome() {
               <p className="mt-2 font-serif-display text-base sm:text-lg">Tokyu Bay Hotel</p>
               <p className="mt-1 text-white/85">横浜ベイホテル東急</p>
               <p className="mt-2 text-xs sm:text-sm text-white/70">
-                〒220-8515
+                〒220-8543
                 <br />
                 神奈川県横浜市西区みなとみらい2-3-7
               </p>
               <p className="mt-2 text-xs sm:text-sm text-white/70">TEL 045-682-2222</p>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/80 animate-bounce">
+          <span className="font-serif-display text-xs sm:text-sm tracking-widest">SCROLL</span>
+          <svg className="mt-1 w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </div>
+      </section>
+
+      <section className="relative h-screen w-full snap-start flex items-center justify-center bg-stone-900 text-white overflow-hidden">
+        <img
+          src={minatomirai}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute bottom-0 left-0 w-full h-auto select-none [filter:brightness(0)_invert(1)] opacity-80"
+        />
+        <div className="relative z-10 px-6 mx-auto max-w-screen-md text-center">
+          <p className="font-script text-3xl sm:text-4xl md:text-5xl">Access</p>
+          <p className="mt-2 font-serif-display text-lg sm:text-xl tracking-widest text-white/80">交 通</p>
+
+          <div className="mt-10 sm:mt-14 font-ja text-sm sm:text-base leading-relaxed">
+            <div>
+              <p className="font-serif-display text-xs sm:text-sm tracking-[0.3em] text-white/60">BY TRAIN</p>
+              <p className="mt-3 text-sm sm:text-base text-white/85 leading-relaxed">
+                みなとみらい線「みなとみらい駅」
+                <br />
+                クイーンズスクエア連絡口より徒歩約1分（駅直結）
+              </p>
+              <p className="mt-2 text-xs sm:text-sm text-white/70 leading-relaxed">
+                JR線・横浜市営地下鉄「桜木町駅」より徒歩約10分
+              </p>
+            </div>
+
+            <div className="mx-auto my-8 h-px w-16 bg-white/30" />
+
+            <div>
+              <p className="font-serif-display text-xs sm:text-sm tracking-[0.3em] text-white/60">BY CAR</p>
+              <p className="mt-3 text-sm sm:text-base text-white/85 leading-relaxed">
+                首都高速横羽線「みなとみらい出口」より約3分
+              </p>
+              <p className="mt-3 text-xs sm:text-sm text-white/85 leading-relaxed">
+                クイーンズスクエア横浜の地下駐車場が
+                <br />
+                ご利用いただけます
+              </p>
             </div>
           </div>
         </div>

@@ -73,6 +73,7 @@ export function Welcome() {
               <p className="font-serif-display text-xs sm:text-sm tracking-[0.3em] text-white/60">DATE</p>
               <p className="mt-2 font-serif-display text-base sm:text-lg">2026 . 08 . 06 THU</p>
               <p className="mt-1 text-white/85">受付 11:30 / 挙式 12:00</p>
+              <p className="mt-1 text-white/85">披露宴 13:00〜</p>
             </div>
 
             <div className="mx-auto my-8 h-px w-16 bg-white/30" />
